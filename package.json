@@ -1,0 +1,21 @@
+{
+  "name": "jsrad",
+  "version": "1.0.0",
+  "description": "ece315 project",
+  "main": "script.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "mfcworkstation"
+  },
+  "author": "Thomas Kubler",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "firebase": "^8.4.1"
+  }
+}
