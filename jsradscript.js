@@ -934,7 +934,7 @@ function UpdateCanvas(){
                                 //can airplane hit site with harm on target list?
                                 if(!samdisabled[h] && stillontargetlist && distance <= rawrad && distance <= lineofsight){
                                     samdisabled[h] = true;
-                                    console.log("Harm fired");
+                                    console.log("Harm fired", h);
                                     UpdateSitesAndCommLinksForDisabledSites();
                                     ctx.strokeStyle = "red";
                                     ctx.lineWidth = 3;
@@ -1233,7 +1233,7 @@ function ParseXLSXFile(workbook){
     HARMTargetList[0][0] = parseInt(GrabJSONCell(FirstJSON,Table10HARMRow+1-1,1))-1;
     HARMTargetList[0][1] = parseInt(GrabJSONCell(FirstJSON,Table10HARMRow+2-1,1))-1;
     HARMTargetList[1][0] = parseInt(GrabJSONCell(FirstJSON,Table10HARMRow+3-1,1))-1;
-    HARMTargetList[1][0] = parseInt(GrabJSONCell(FirstJSON,Table10HARMRow+4-1,1))-1;
+    HARMTargetList[1][1] = parseInt(GrabJSONCell(FirstJSON,Table10HARMRow+4-1,1))-1;
     
     //Logic:
     totalcost = ComputeCost();
