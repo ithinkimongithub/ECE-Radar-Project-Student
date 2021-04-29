@@ -383,7 +383,7 @@ let b_cyberactive; //just gray out all the rings and sites while active
 let b_jamactive; //grays out the blue rings when this is active
 let b_success;
 let b_gradermode = false;
-var myAirplane;
+//ar myAirplane;
 let samdisabled = new Array(NUMSITES); //resets at beginning of each simulation
 let commDisabled = new Array(numcommlinks); //when "true" a comm link is temporarily masked due to sam destruction
 //the Step arrays tell the game how to step through the game by telling it:
@@ -447,7 +447,7 @@ function loadInstructorMode(url, callback){
     head.appendChild(script);
 }
 var ContinueLoading = function () {
-    console.log("loading game");
+    console.log("loading game. GitHub will block Google FLOC and Chrome will report permissions-policy: interest-cohort=()");
     if(instructor_mode == true){
         instructor_loaded = true; //instructor.js is loaded, so set to true to prevent further loading
     }
@@ -537,8 +537,8 @@ var ContinueLoading = function () {
         AAcftVisToHorizon[acft] = KMPERMILE*Math.sqrt(2*AALT[acft]);
     }
     //initialize variables for airplane icon, comm links grid, comm links on, and then do a draw
-    myAirplane = new Image(30,30);
-    myAirplane.src = "Airplane.gif";
+    //myAirplane = new Image(30,30);
+    //myAirplane.src = "Airplane.gif";
     //sim status
     b_loaded = false; //set to true after a successful file load
     b_simulating = false;
